@@ -1,6 +1,30 @@
-@StudySync.API_HostAddress = http://localhost:5202
+@baseUrl = http://localhost:5202
 
-GET {{StudySync.API_HostAddress}}/weatherforecast/
-Accept: application/json
+### Register a user
+POST {{baseUrl}}/api/users/register
+Content-Type: application/json
 
-###
+{
+  "name": "Rikesh Budhathoki",
+  "email": "rikesh@email.com",
+  "password": "test1234"
+}
+
+### Login
+POST {{baseUrl}}/api/users/login
+Content-Type: application/json
+
+{
+  "email": "rikesh@email.com",
+  "password": "test1234"
+}
+
+### Duplicate email test
+POST {{baseUrl}}/api/users/register
+Content-Type: application/json
+
+{
+  "name": "Someone Else",
+  "email": "rikesh@email.com",
+  "password": "password123"
+}
