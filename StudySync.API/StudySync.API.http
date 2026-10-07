@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
   "name": "Rikesh Budhathoki",
-  "email": "rikesh@email.com",
+  "email": "rikesh2@email.com",
   "password": "test1234"
 }
 
@@ -15,7 +15,7 @@ POST {{baseUrl}}/api/users/login
 Content-Type: application/json
 
 {
-  "email": "rikesh@email.com",
+  "email": "rikesh2@email.com",
   "password": "test1234"
 }
 
@@ -25,6 +25,6 @@ Content-Type: application/json
 
 {
   "name": "Someone Else",
-  "email": "rikesh@email.com",
+  "email": "rikesh2@email.com",
   "password": "password123"
 }
